@@ -1,11 +1,10 @@
 import React from "react";
+import Banner from "./Pages/Banner";
 
 const Home = () => {
   return (
     <div>
-      <h1 className="text-3xl bg-orange-200 font-bold underline">
-        Hello world!
-      </h1>
+      <Banner></Banner>
     </div>
   );
 };
