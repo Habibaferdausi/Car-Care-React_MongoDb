@@ -21,13 +21,21 @@ const Navbar = () => {
         {" "}
         <Link to="/about">About</Link>{" "}
       </li>
-      /
+
       {user?.email ? (
-        <li>
-          <button className="btn-danger" onClick={handleLogOut}>
-            Logout
-          </button>
-        </li>
+        <>
+          {" "}
+          (
+          <li>
+            <Link to="/bookings">My Booking</Link>
+          </li>
+          <li>
+            <button className="btn bg-red-500" onClick={handleLogOut}>
+              Logout
+            </button>
+          </li>
+          ){" "}
+        </>
       ) : (
         <li>
           {" "}
