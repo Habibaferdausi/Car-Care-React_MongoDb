@@ -6,6 +6,7 @@ import SignIn from "../Login/SignIn";
 import SignUp from "../Login/SignUp";
 import CheckOut from "../Home/Pages/CheckOut";
 import Booking from "../Home/Pages/Booking";
+import PrivetRouter from "./PrivetRouter";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,11 @@ const router = createBrowserRouter([
       },
       {
         path: "bookings",
-        element: <Booking></Booking>,
+        element: (
+          <PrivetRouter>
+            <Booking></Booking>
+          </PrivetRouter>
+        ),
       },
     ],
   },
