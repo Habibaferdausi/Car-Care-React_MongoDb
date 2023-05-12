@@ -25,7 +25,6 @@ const Navbar = () => {
       {user?.email ? (
         <>
           {" "}
-          (
           <li>
             <Link to="/bookings">My Booking</Link>
           </li>
@@ -33,8 +32,7 @@ const Navbar = () => {
             <button className="btn bg-red-500" onClick={handleLogOut}>
               Logout
             </button>
-          </li>
-          ){" "}
+          </li>{" "}
         </>
       ) : (
         <li>
